@@ -1,5 +1,5 @@
 import React from "react"
-import propTypes from "prop-types"
+import PropTypes from "prop-types"
 
 import * as S from "./styled"
 
@@ -19,20 +19,20 @@ const RecommendedPosts = ({ next, previous }) => (
 )
 
 RecommendedPosts.propTypes = {
-  next: propTypes.shape({
-    frontmatter: propTypes.shape({
-      title: propTypes.string.isRequired,
+  next: PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string.isRequired,
     }),
-    fields: propTypes.shape({
-      slug: propTypes.string.isRequired,
+    fields: PropTypes.shape({
+      slug: PropTypes.string.isRequired,
     }),
   }),
-  previous: propTypes.shape({
-    frontmatter: propTypes.shape({
-      title: propTypes.string.isRequired,
+  previous: PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string.isRequired,
     }),
-    fields: propTypes.shape({
-      slug: propTypes.string.isRequired,
+    fields: PropTypes.shape({
+      slug: PropTypes.string.isRequired,
     }),
   }),
 }
